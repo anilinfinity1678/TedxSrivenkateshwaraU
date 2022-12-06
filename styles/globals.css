@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@font-face {
+    font-family: "helvetica";
+    src: url(../assets/fonts/helvetica-light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "polyface";
+    src: url(../assets/fonts/polyface.zip) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --black: black;
+    --white: white;
+    --red: rgb(253, 43, 6);
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-helvetica: "helvetica";
+    --transition-300: 300ms ease;
+    --black-85: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid greenyellow; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: min(100%, 1400px);
+    margin-inline: auto;
+    background-color: var(--black);
+    overflow-x: hidden;
+}
+main {
+    width: min(90%, 1400px);
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+.tedx-heading {
+    color: var(--red);
+    margin: 0 0 20px;
+    position: relative;
+    width: max-content;
+}
+
+.tedx-heading::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 5px;
+    width: 70%;
+    background-color: rgb(255, 43, 6);
+}

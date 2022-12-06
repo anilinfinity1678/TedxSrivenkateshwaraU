@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap");
+
+.block {
+    margin: 0 0 1em;
+    font-family: var(--ff-poppins);
+}
+
+.block:first-of-type h2 {
+    margin: 3em 0 1.25em !important;
+}
+
+.block h2 {
+    margin: 2em 0 1.25em;
+    color: rgb(253, 43, 6);
+    text-transform: capitalize;
+}
+
+.blockContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+.block-img {
+    width: 250px;
+    aspect-ratio: 1;
+    border: 4px solid rgb(253, 43, 6);
+    border-top: 4px solid white;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.block-img {
+    border-radius: 50%;
+    transition: 500ms ease;
+}
+
+.block-img > img {
+    width: 100%;
+}
+
+.hemanth-img {
+    height: 100% !important;
+}
+
+.block-img:is(:hover, :focus) {
+    border-radius: 0;
+}
+
+.blockInfo {
+    text-align: center;
+}
+
+.blockInfo > p {
+    color: white;
+    margin: 10px;
+}
+
+.blockInfo > h3 {
+    color: rgb(253, 43, 6);
+}
+
+.designier {
+    display: flex;
+    gap: 80px;
+}
+.offer p {
+    color: orange;
+    font-family: Marker Felt, fantasy;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .block {
+        width: max-content;
+        margin-inline: auto;
+    }
+    .block-img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        width: 95%;
+    }
+    .designier {
+        display: flex;
+        gap: 80px;
+    }
+    .blockInfo {
+        width: 100%;
+    }
+    .blockContainer {
+        flex-direction: column;
+    }
+    .block-img {
+        margin-inline: auto;
+    }
+}

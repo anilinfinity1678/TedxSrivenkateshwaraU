@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap");
+
+body {
+    background: black;
+}
+img {
+    height: 100%;
+    width: 500px;
+}
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--ff-poppins);
+}
+.medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min: 600px) {
+    img {
+        height: 100%;
+        width: 500px;
+    }
+}
